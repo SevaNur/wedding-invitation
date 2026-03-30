@@ -163,11 +163,33 @@
         .photo-frame .frame-photo {
             position: absolute;
             top: 12%;
-            left: 16%;
-            width: 68%;
+            left: 18%;
+            width: 64%;
             height: 72%;
             object-fit: cover;
+            object-position: center 20%;
             z-index: 1;
+        }
+
+        @media (max-width: 900px) {
+            .photo-frame .frame-photo {
+                object-position: center 15%;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .photo-frame .frame-photo {
+                object-position: center 10%;
+                top: -4%;
+                height: 102%;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .photo-frame .frame-photo {
+                object-position: center 5%;
+
+            }
         }
 
         /* ===== Save the Date ===== */
