@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#F6F3F4">
+    <title>Севда и Никита — 8 апреля 2026</title>
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Севда и Никита — 8 апреля 2026">
+    <meta property="og:description" content="Приглашаем вас на нашу свадьбу! 8 апреля 2026, Москва">
+    <meta property="og:image" content="https://sevanur.github.io/wedding-invitation/og_image.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        @font-face {
+            font-family: 'Savoye LET';
+            src: local('Savoye LET'), local('SavoyeLetPlain'), local('Savoye LET Plain');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 18px;
+            line-height: 1.8;
+            color: #13100f;
+            background-color: #F6F3F4;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        .script-font {
+            font-family: 'Savoye LET', 'Apple Chancery', 'Segoe Script', cursive;
+        }
+
+        /* ===== Hero GIF ===== */
+        .hero-gif {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: clamp(10px, 2vw, 20px) 24px 0;
+            overflow: hidden;
+        }
+
+        .hero-gif img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* ===== Greeting Section ===== */
+        .greeting {
+            padding: clamp(12px, 2.5vw, 30px) 24px;
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .greeting-image {
+            flex: 0 0 320px;
+        }
+
+        .greeting-image img {
+            width: 100%;
+            height: auto;
+        }
+
+        .greeting-text {
+            flex: 1;
+            text-align: center;
+        }
+
+        .greeting-text p {
+            font-family: 'Savoye LET', 'Apple Chancery', 'Segoe Script', cursive;
+            font-size: clamp(2rem, 4.5vw, 3rem);
+            line-height: 1.6;
+            color: #13100f;
+        }
+
+        .greeting-text .heart {
+            color: #c4848a;
+        }
+
+        /* ===== Mountains ===== */
+        .mountains-section {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 24px;
+            overflow: hidden;
+        }
+
+        .mountains-section img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        /* ===== Story Section ===== */
+        .story {
+            padding: clamp(12px, 2.5vw, 30px) 24px;
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .story-text {
+            flex: 1;
+        }
+
+        .story-text p {
+            font-family: 'Savoye LET', 'Apple Chancery', 'Segoe Script', cursive;
+            font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+            line-height: 1.6;
+            color: #13100f;
+            text-align: center;
+        }
+
+        .story-frames {
+            flex: 0 0 280px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .photo-frame {
+            width: 220px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .photo-frame .frame-border {
+            width: 100%;
+            height: auto;
+            display: block;
+            position: relative;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        .photo-frame .frame-photo {
+            position: absolute;
+            top: 12%;
+            left: 16%;
+            width: 68%;
+            height: 72%;
+            object-fit: cover;
+            z-index: 1;
+        }
+
+        /* ===== Save the Date ===== */
+        .save-date {
+            text-align: center;
+            padding: 0 24px clamp(8px, 1.5vw, 15px);
+        }
+
+        .save-date h2 {
+            font-family: 'Savoye LET', 'Apple Chancery', 'Segoe Script', cursive;
+            font-size: clamp(3rem, 7vw, 5.5rem);
+            font-weight: normal;
+            color: #13100f;
+            margin-bottom: clamp(16px, 3vw, 30px);
+        }
+
+        .date-numbers {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: clamp(16px, 4vw, 40px);
+            margin-bottom: 16px;
+        }
+
+        .date-cell {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .date-cell .date-num {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: clamp(100px, 18vw, 160px);
+        }
+
+        .date-num {
+            font-family: 'Savoye LET', 'Apple Chancery', 'Segoe Script', cursive;
+            font-size: clamp(3.5rem, 9vw, 6.5rem);
+            color: #13100f;
+            line-height: 1;
+        }
+
+        .date-day {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(0.7rem, 1.2vw, 0.9rem);
+            color: #b8a89a;
+            letter-spacing: 0.05em;
+            margin-top: 4px;
+        }
+
+        .heart-wrap {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: clamp(100px, 18vw, 160px);
+        }
+
+        .heart-wrap svg {
+            width: clamp(100px, 18vw, 160px);
+            height: clamp(100px, 18vw, 160px);
+        }
+
+        .heart-wrap .date-num {
+            position: absolute;
+            color: #722F37;
+            min-height: auto;
+        }
+
+        .countdown-intro {
+            font-family: 'Savoye LET', 'Apple Chancery', 'Segoe Script', cursive;
+            font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+            color: #13100f;
+            margin-bottom: 6px;
+        }
+
+        .date-month {
+            font-family: 'Savoye LET', 'Apple Chancery', 'Segoe Script', cursive;
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            color: #13100f;
+            margin-top: 10px;
+            padding-bottom: clamp(10px, 2vw, 20px);
+        }
+
+        /* ===== Decorative Divider ===== */
+        .divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 20px 0;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .divider::before,
+        .divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #c4b5a7, transparent);
+        }
+
+        .divider svg {
+            width: 20px;
+            height: 20px;
+            opacity: 0.6;
+        }
+
+        /* ===== Timeline ===== */
+        .timeline-section {
+            padding: 0 24px clamp(10px, 2vw, 20px);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .timeline-section h2 {
+            font-family: 'Savoye LET', 'Apple Chancery', 'Segoe Script', cursive;
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: normal;
+            text-align: center;
+            color: #13100f;
+            margin-bottom: clamp(12px, 2.5vw, 25px);
+        }
+
+        .timeline {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .timeline::before {
+            display: none;
+        }
+
+        .timeline-with-line {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .timeline-with-line::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #13100f;
+        }
+
+        .timeline-item {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+            min-height: 120px;
+        }
+
+        .timeline-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .timeline-img img {
+            width: clamp(70px, 14vw, 110px);
+            height: auto;
+        }
+
+        .timeline-dot-wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .timeline-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: #13100f;
+        }
+
+        .timeline-info {
+            padding: 10px 20px;
+        }
+
+        .timeline-info-left {
+            text-align: right;
+        }
+
+        .timeline-info-right {
+            text-align: left;
+        }
+
+        .timeline-time {
+            font-family: 'Savoye LET', 'Apple Chancery', 'Segoe Script', cursive;
+            font-size: 1.8rem;
+            color: #13100f;
+            margin-bottom: 2px;
+            font-weight: normal;
+        }
+
+        .timeline-event {
+            font-family: 'Savoye LET', 'Apple Chancery', 'Segoe Script', cursive;
+            font-size: 2rem;
+            line-height: 1.3;
+            color: #13100f;
+        }
+
+        .timeline-note {
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #999;
+            margin-top: 2px;
+        }
+
+        /* Last item: centered below the line */
+        .timeline-last {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            margin-top: 60px;
+        }
+
+        .timeline-last::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: -60px;
+            height: 67px;
+            width: 2px;
+            background: #13100f;
+        }
+
+        .timeline-last .timeline-dot-wrap {
+            width: 40px;
+        }
+
+        .timeline-last .timeline-info {
+            text-align: center;
+            padding: 10px 0 0;
+        }
+
+        .timeline-bottom-img {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            gap: clamp(8px, 2vw, 20px);
+            padding: 8px 0 0;
+        }
+
+        .timeline-bottom-img img {
+            width: clamp(50px, 12vw, 90px);
+            height: auto;
+        }
+
+        @media (max-width: 550px) {
+            .timeline-img img {
+                width: 60px;
+            }
+
+            .timeline-bottom-img img {
+                width: 45px;
+            }
+
+            .timeline-info {
+                padding: 8px 10px;
+            }
+
+            .timeline-time {
+                font-size: 1.4rem;
+            }
+
+            .timeline-event {
+                font-size: 1.6rem;
+            }
+        }
+
+        /* ===== Locations ===== */
+        .locations-section {
+            padding: clamp(12px, 2.5vw, 25px) 24px clamp(16px, 3vw, 35px);
+        }
+
+        .locations-section h2 {
+            font-family: 'Savoye LET', 'Apple Chancery', 'Segoe Script', cursive;
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: normal;
+            text-align: center;
+            color: #13100f;
+            margin-bottom: clamp(12px, 2.5vw, 25px);
+        }
+
+        .locations-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .location-card {
+            text-align: center;
+            padding: 30px 20px;
+            border: 1px solid #d9cfc7;
+            border-radius: 12px;
+            background: rgba(255,255,255,0.4);
+        }
+
+        .location-label {
+            font-family: 'Savoye LET', 'Apple Chancery', 'Segoe Script', cursive;
+            font-size: 1.6rem;
+            color: #b8a89a;
+            margin-bottom: 6px;
+        }
+
+        .location-name {
+            font-family: 'Savoye LET', 'Apple Chancery', 'Segoe Script', cursive;
+            font-size: 2.4rem;
+            color: #13100f;
+            margin-bottom: 8px;
+        }
+
+        .location-name a {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 1px solid #c4b5a7;
+            transition: border-color 0.3s;
+        }
+
+        .location-name a:hover {
+            border-color: #13100f;
+        }
+
+        .location-address {
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+            font-size: 1.2rem;
+            color: #888;
+        }
+
+        /* ===== Countdown Timer ===== */
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: clamp(16px, 4vw, 40px);
+            padding: clamp(16px, 3vw, 30px) 24px;
+        }
+
+        .countdown-block {
+            text-align: center;
+        }
+
+        .countdown-number {
+            font-family: 'Savoye LET', 'Apple Chancery', 'Segoe Script', cursive;
+            font-size: clamp(2.8rem, 7vw, 5rem);
+            color: #13100f;
+            line-height: 1;
+            display: block;
+        }
+
+        .countdown-label {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(0.8rem, 1.5vw, 1rem);
+            color: #b8a89a;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-top: 4px;
+        }
+
+        .countdown-separator {
+            font-family: 'Savoye LET', 'Apple Chancery', 'Segoe Script', cursive;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            color: #c4b5a7;
+            align-self: flex-start;
+            padding-top: 0.15em;
+        }
+
+        /* ===== Wishes ===== */
+        .wishes {
+            text-align: center;
+            padding: clamp(20px, 4vw, 40px) 24px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .wishes h2 {
+            font-family: 'Savoye LET', 'Apple Chancery', 'Segoe Script', cursive;
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: normal;
+            color: #13100f;
+            margin-bottom: clamp(12px, 2.5vw, 25px);
+        }
+
+        .wishes p {
+            font-family: 'Savoye LET', 'Apple Chancery', 'Segoe Script', cursive;
+            font-size: clamp(1.5rem, 3vw, 2.2rem);
+            line-height: 1.5;
+            color: #13100f;
+            margin-bottom: 16px;
+        }
+
+        .wishes p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* ===== Closing ===== */
+        .closing {
+            text-align: center;
+            padding: clamp(12px, 2.5vw, 30px) 24px clamp(16px, 3vw, 35px);
+        }
+
+        .closing p {
+            font-family: 'Savoye LET', 'Apple Chancery', 'Segoe Script', cursive;
+            font-size: clamp(1.8rem, 4vw, 2.6rem);
+            color: #13100f;
+            line-height: 1.6;
+        }
+
+        .closing .initials {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            margin-top: 20px;
+            color: #13100f;
+        }
+
+        /* ===== Sticky Nav Button ===== */
+        .sticky-nav {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 100;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.4s ease;
+        }
+
+        .sticky-nav.visible {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .sticky-nav a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(19, 16, 15, 0.85);
+            color: #F6F3F4;
+            text-decoration: none;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 0.85rem;
+            letter-spacing: 0.05em;
+            padding: 10px 18px;
+            border-radius: 30px;
+            backdrop-filter: blur(8px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            transition: background 0.3s;
+        }
+
+        .sticky-nav a:hover {
+            background: rgba(19, 16, 15, 0.95);
+        }
+
+        .sticky-nav svg {
+            width: 16px;
+            height: 16px;
+            flex-shrink: 0;
+        }
+
+        /* ===== Reveal Animations ===== */
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+        .reveal.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .reveal { opacity: 1; transform: none; transition: none; }
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 700px) {
+            .greeting {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .greeting-image {
+                display: none;
+            }
+
+            .story {
+                flex-direction: column;
+            }
+
+            .story-frames {
+                flex: none;
+                flex-direction: row;
+                width: 100%;
+                justify-content: center;
+            }
+
+            .photo-frame {
+                width: 160px;
+                height: 140px;
+            }
+
+            .locations-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== Hero GIF ===== -->
+    <div class="hero-gif">
+        <img src="IMG_1309.GIF" alt="Севда и Никита">
+    </div>
+
+    <!-- ===== Greeting ===== -->
+    <section class="greeting reveal">
+        <div class="greeting-image">
+            <img src="glasses.png" alt="Пирамида бокалов">
+        </div>
+
+        <div class="greeting-text">
+            <p>
+                Дорогие гости!<br>
+                Совсем скоро состоится день нашей свадьбы <span class="heart">&hearts;</span><br>
+                Приглашаем вас разделить радость особенного для нас события!
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== Mountains GIF ===== -->
+    <section class="mountains-section">
+        <img src="IMG_1315.GIF" alt="Горы Армении">
+    </section>
+
+    <!-- ===== Our Story ===== -->
+    <section class="story reveal">
+        <div class="story-text">
+            <p>
+                В 2024 году горы Армении свели нас вместе. За эти два года мы успели вместе побывать в нескольких странах, много переезжали, меняли работу, открывали новые хобби и увлечения.<br><br>
+                Но самое главное — мы поняли, что хотим и дальше проживать эту жизнь вместе!
+            </p>
+        </div>
+
+        <div class="story-frames">
+            <div class="photo-frame">
+                <img class="frame-photo" src="IMG_2206.jpeg" alt="Севда и Никита">
+                <img class="frame-border" src="frame-border.png" alt="">
+            </div>
+            <div class="photo-frame">
+                <img class="frame-photo" src="IMG_6815.JPG" alt="Севда и Никита">
+                <img class="frame-border" src="frame-border.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Save the Date ===== -->
+    <section class="save-date">
+        <div class="divider reveal">
+            <svg viewBox="0 0 20 20" fill="none"><path d="M10,4 Q14,0 18,4 Q22,10 10,18 Q-2,10 2,4 Q6,0 10,4Z" stroke="#c4b5a7" stroke-width="0.8" fill="none"/></svg>
+        </div>
+
+        <h2 class="reveal">Сохраните дату!</h2>
+
+        <div class="date-numbers reveal">
+            <div class="date-cell">
+                <span class="date-num">6</span>
+                <span class="date-day">пн</span>
+            </div>
+            <div class="date-cell">
+                <span class="date-num">7</span>
+                <span class="date-day">вт</span>
+            </div>
+            <div class="date-cell">
+                <div class="heart-wrap">
+                    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50,88 Q5,55 5,32 Q5,10 28,10 Q40,10 50,24 Q60,10 72,10 Q95,10 95,32 Q95,55 50,88Z" stroke="#722F37" stroke-width="1.5" fill="none"/>
+                    </svg>
+                    <span class="date-num">8</span>
+                </div>
+                <span class="date-day">ср</span>
+            </div>
+            <div class="date-cell">
+                <span class="date-num">9</span>
+                <span class="date-day">чт</span>
+            </div>
+            <div class="date-cell">
+                <span class="date-num">10</span>
+                <span class="date-day">пт</span>
+            </div>
+        </div>
+
+        <p class="date-month reveal">апреля 2026г</p>
+
+        <p class="countdown-intro reveal">встретимся через</p>
+
+        <div class="countdown reveal" id="countdown">
+            <div class="countdown-block">
+                <span class="countdown-number" id="cd-days">--</span>
+                <span class="countdown-label">дней</span>
+            </div>
+            <span class="countdown-separator">:</span>
+            <div class="countdown-block">
+                <span class="countdown-number" id="cd-hours">--</span>
+                <span class="countdown-label">часов</span>
+            </div>
+            <span class="countdown-separator">:</span>
+            <div class="countdown-block">
+                <span class="countdown-number" id="cd-minutes">--</span>
+                <span class="countdown-label">минут</span>
+            </div>
+            <span class="countdown-separator">:</span>
+            <div class="countdown-block">
+                <span class="countdown-number" id="cd-seconds">--</span>
+                <span class="countdown-label">секунд</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Timeline ===== -->
+    <section class="timeline-section" id="schedule">
+        <div class="divider reveal">
+            <svg viewBox="0 0 20 20" fill="none"><path d="M10,4 Q14,0 18,4 Q22,10 10,18 Q-2,10 2,4 Q6,0 10,4Z" stroke="#c4b5a7" stroke-width="0.8" fill="none"/></svg>
+        </div>
+
+        <h2 class="reveal">Расписание дня</h2>
+
+        <div class="timeline">
+            <div class="timeline-with-line">
+                <!-- 1 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-img">
+                        <img src="1.png" alt="">
+                    </div>
+                    <div class="timeline-dot-wrap"><div class="timeline-dot"></div></div>
+                    <div class="timeline-info timeline-info-right">
+                        <div class="timeline-time">12:45</div>
+                        <div class="timeline-event">Встречаемся у Грибоедовского ЗАГСа</div>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-info timeline-info-left">
+                        <div class="timeline-time">13:00 – 14:00</div>
+                        <div class="timeline-event">Торжественная регистрация</div>
+                    </div>
+                    <div class="timeline-dot-wrap"><div class="timeline-dot"></div></div>
+                    <div class="timeline-img">
+                        <img src="2.png" alt="">
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-img">
+                        <img src="3.png" alt="">
+                    </div>
+                    <div class="timeline-dot-wrap"><div class="timeline-dot"></div></div>
+                    <div class="timeline-info timeline-info-right">
+                        <div class="timeline-time">14:00 – 14:30</div>
+                        <div class="timeline-event">Прогулка по весенней Москве</div>
+                        <div class="timeline-note">если позволит погода</div>
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-info timeline-info-left">
+                        <div class="timeline-time">14:30 – 18:30</div>
+                        <div class="timeline-event">Обед в ресторане «Пушкинъ»</div>
+                    </div>
+                    <div class="timeline-dot-wrap"><div class="timeline-dot"></div></div>
+                    <div class="timeline-img">
+                        <img src="4.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5: last item — no line, centered -->
+            <div class="timeline-last reveal">
+                <div class="timeline-dot-wrap"><div class="timeline-dot"></div></div>
+                <div class="timeline-info">
+                    <div class="timeline-time">После 18:30</div>
+                    <div class="timeline-event">А дальше — посмотрим, куда приведёт вечер</div>
+                </div>
+                <div class="timeline-bottom-img">
+                    <img src="woman-champagne.svg" alt="">
+                    <img src="man-champagne.svg" alt="">
+                    <img src="man-dancing.svg" alt="">
+                    <img src="woman-bouquet.svg" alt="">
+                    <img src="man-wine.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Locations ===== -->
+    <section class="locations-section">
+        <h2 class="reveal">Локации</h2>
+
+        <div class="locations-grid">
+            <div class="location-card reveal">
+                <p class="location-label">Церемония</p>
+                <h3 class="location-name"><a href="https://yandex.com/maps/-/CDaEnHJ1" target="_blank" rel="noopener">Грибоедовский ЗАГС</a></h3>
+                <p class="location-address">ул. Большая Харитоньевская, 10, Москва</p>
+            </div>
+
+            <div class="location-card reveal">
+                <p class="location-label">Банкет</p>
+                <h3 class="location-name"><a href="https://yandex.com/maps/-/CHEFiMiX" target="_blank" rel="noopener">Ресторан «Пушкинъ»</a></h3>
+                <p class="location-address">Тверской бул., 26А, Москва</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Wishes ===== -->
+    <section class="wishes">
+        <div class="divider reveal">
+            <svg viewBox="0 0 20 20" fill="none"><path d="M10,4 Q14,0 18,4 Q22,10 10,18 Q-2,10 2,4 Q6,0 10,4Z" stroke="#c4b5a7" stroke-width="0.8" fill="none"/></svg>
+        </div>
+        <h2 class="reveal">Пожелания</h2>
+        <p class="reveal">Свои теплые слова и пожелания приносите в сердцах,<br>а подарки — в конверте</p>
+        <div class="reveal" style="text-align:center; padding: 10px 0;"><img src="wedding-cake.png" alt="" style="width: 50px; height: auto; opacity: 0.8;"></div>
+        <p class="reveal">На нашей свадьбе нет дресс-кода, но будет здорово, если вы придержитесь элегантных силуэтов и оттенков, соответствующих выбранным локациям</p>
+    </section>
+
+    <!-- ===== Closing ===== -->
+    <section class="closing">
+        <div class="divider reveal">
+            <svg viewBox="0 0 20 20" fill="none"><path d="M10,4 Q14,0 18,4 Q22,10 10,18 Q-2,10 2,4 Q6,0 10,4Z" stroke="#c4b5a7" stroke-width="0.8" fill="none"/></svg>
+        </div>
+        <p class="reveal">Будем счастливы разделить этот день с вами.</p>
+        <p class="initials reveal">С. & Н.</p>
+    </section>
+
+    <!-- Sticky nav button -->
+    <div class="sticky-nav" id="stickyNav">
+        <a href="#schedule">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#F6F3F4" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            Где и когда?
+        </a>
+    </div>
+
+    <script>
+        (function() {
+            if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelectorAll('.reveal').forEach(function(el) {
+                    el.classList.add('revealed');
+                });
+                return;
+            }
+
+            var observer = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('revealed');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+
+            document.querySelectorAll('.reveal').forEach(function(el) {
+                observer.observe(el);
+            });
+        })();
+
+        // Sticky nav button
+        (function() {
+            var btn = document.getElementById('stickyNav');
+            var schedule = document.getElementById('schedule');
+            var isReturning = false;
+
+            try {
+                isReturning = localStorage.getItem('visited') === '1';
+                localStorage.setItem('visited', '1');
+            } catch(e) {}
+
+            function update() {
+                var rect = schedule.getBoundingClientRect();
+                var scheduleVisible = rect.top < window.innerHeight && rect.bottom > 0;
+
+                if (scheduleVisible) {
+                    btn.classList.remove('visible');
+                } else if (isReturning || window.scrollY > 400) {
+                    btn.classList.add('visible');
+                } else {
+                    btn.classList.remove('visible');
+                }
+            }
+
+            update();
+            window.addEventListener('scroll', update);
+        })();
+
+        // Countdown to April 8, 2026 12:45 Moscow time
+        (function() {
+            var wedding = new Date('2026-04-08T12:45:00+03:00').getTime();
+            var days = document.getElementById('cd-days');
+            var hours = document.getElementById('cd-hours');
+            var minutes = document.getElementById('cd-minutes');
+            var seconds = document.getElementById('cd-seconds');
+
+            function pad(n) { return n < 10 ? '0' + n : n; }
+
+            function pluralDays(n) {
+                var m = n % 100;
+                if (m >= 11 && m <= 19) return 'дней';
+                var l = m % 10;
+                if (l === 1) return 'день';
+                if (l >= 2 && l <= 4) return 'дня';
+                return 'дней';
+            }
+
+            function pluralHours(n) {
+                var m = n % 100;
+                if (m >= 11 && m <= 19) return 'часов';
+                var l = m % 10;
+                if (l === 1) return 'час';
+                if (l >= 2 && l <= 4) return 'часа';
+                return 'часов';
+            }
+
+            function pluralMinutes(n) {
+                var m = n % 100;
+                if (m >= 11 && m <= 19) return 'минут';
+                var l = m % 10;
+                if (l === 1) return 'минута';
+                if (l >= 2 && l <= 4) return 'минуты';
+                return 'минут';
+            }
+
+            function pluralSeconds(n) {
+                var m = n % 100;
+                if (m >= 11 && m <= 19) return 'секунд';
+                var l = m % 10;
+                if (l === 1) return 'секунда';
+                if (l >= 2 && l <= 4) return 'секунды';
+                return 'секунд';
+            }
+
+            function update() {
+                var now = Date.now();
+                var diff = wedding - now;
+                if (diff <= 0) {
+                    days.textContent = '0';
+                    hours.textContent = '00';
+                    minutes.textContent = '00';
+                    seconds.textContent = '00';
+                    return;
+                }
+                var d = Math.floor(diff / 86400000);
+                var h = Math.floor((diff % 86400000) / 3600000);
+                var m = Math.floor((diff % 3600000) / 60000);
+                var s = Math.floor((diff % 60000) / 1000);
+                days.textContent = d;
+                hours.textContent = pad(h);
+                minutes.textContent = pad(m);
+                seconds.textContent = pad(s);
+                days.nextElementSibling.textContent = pluralDays(d);
+                hours.nextElementSibling.textContent = pluralHours(h);
+                minutes.nextElementSibling.textContent = pluralMinutes(m);
+                seconds.nextElementSibling.textContent = pluralSeconds(s);
+            }
+
+            update();
+            setInterval(update, 1000);
+        })();
+    </script>
+</body>
+</html>
